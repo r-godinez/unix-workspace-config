@@ -38,3 +38,4 @@ brew install --cask ltspice
 brew install --cask keka
 
 brew update && brew upgrade
+brew cleanup
