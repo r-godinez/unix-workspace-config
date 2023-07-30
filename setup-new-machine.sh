@@ -1,17 +1,15 @@
-# !/bin/zsh
-# https://brew.sh/
-# install homebrew
-/bin/bash -c "$(curl -fsSL 
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#!/bin/zsh
+#https://brew.sh/
+#install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# software installations
+#software installations
 brew install docker
 brew install python
 
-# app installations
-brew install --cask google-chrome-dev
-brew install --cask fire-developer-edition
-brew install --cask brave-browser-dev
+#app installations
+brew install --cask google-chrome
+brew install --cask firefox
 
 brew install --cask todoist
 brew install --cask notion
@@ -25,7 +23,6 @@ brew install --cask malwarebytes
 
 brew install --cask microsoft-teams
 brew install --cask microsoft-office
-brew install --cask onedrive
 brew install --cask adobe-creative-cloud
 
 brew install --cask iterm2
