@@ -1,2 +1,11 @@
-# unix/mac-workspace-config
-Used for personal use only
+# Mac Envrionment
+personal use
+
+## run script
+```bash
+chmod +x setup-new-machine.sh
+```
+
+```bash
+./setup-new-machine.sh
+```
