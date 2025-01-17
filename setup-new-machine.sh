@@ -29,6 +29,15 @@ print_success "Updating Homebrew..."
 brew update
 brew upgrade
 
+# Disable System Policy Control to allow applications to run
+sudo spctl --master-disable
+# enter admin password
+
+# check status of System Policy Control 
+spctl --status
+# create if statement to verify status and display
+
+
 # Define the list of apps to install
 casks_apps=(
   "alfred"
@@ -45,6 +54,7 @@ casks_apps=(
   "google-drive"
   "iterm2"
   "keka"
+  "kicad"
   "malwarebytes"
   "microsoft-auto-update"
   "microsoft-office"
@@ -104,6 +114,9 @@ brew upgrade
 # Cleanup unused Homebrew files
 print_success "Cleaning up..."
 brew cleanup
+
+# Re-enable System Policy Control after installations
+sudo spctl --master-enable
 
 # Final message
 print_success "Setup completed. Your macOS environment is ready!"
